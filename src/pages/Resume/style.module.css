@@ -5,6 +5,7 @@
   font-family: 'Poiret One', sans-serif;
   font-weight: 400;
   margin-top: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .leftBlock {
@@ -23,6 +24,7 @@
 @media (max-width: 800px) {
   .container {
     flex-direction: column-reverse;
+    font-size: 1.2rem;
   }
 
   .leftBlock {
