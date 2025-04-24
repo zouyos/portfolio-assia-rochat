@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Poiret One';
+  margin-top: 1.5rem;
+}
+
+.leftBlock {
+  border: 1px solid white;
+  border-radius: 1rem;
+  margin: 0 2rem;
+  padding: 2rem;
+  width: 40%;
+}
+
+.rightBlock {
+  width: 60%;
+  margin: 0 2rem;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .leftBlock {
+    width: 100%;
+  }
+
+  .rightBlock {
+    width: 100%;
+  }
+}

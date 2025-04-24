@@ -1,0 +1,11 @@
+.appLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 1;
+  padding-bottom: 2rem; /* optional spacing before footer */
+}

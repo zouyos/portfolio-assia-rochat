@@ -1,0 +1,57 @@
+.container {
+  padding: 10px 5%;
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  border-radius: 30px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+  gap: 2rem;
+  flex-direction: row;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.presentationText {
+  text-align: center;
+  font-size: 1.3rem;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+.carouselItem {
+  max-height: 500px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .presentation {
+    flex-direction: column;
+  }
+
+  .avatar {
+    max-width: 18rem;
+  }
+
+  .presentationText {
+    font-size: 1.2rem;
+  }
+
+  .carouselItem {
+    max-height: 300px;
+  }
+}

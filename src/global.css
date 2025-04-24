@@ -1,0 +1,22 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
