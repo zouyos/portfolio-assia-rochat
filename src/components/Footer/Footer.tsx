@@ -1,7 +1,7 @@
 import style from './style.module.css';
-import instagram_icon from '@/assets/instagram-icon.png';
-import linkedin_icon from '@/assets/linkedin-icon.png';
-import apple_music_icon from '@/assets/apple-music-icon.png';
+import instagram_icon from '../../assets/instagram-icon.png';
+import linkedin_icon from '../../assets/linkedin-icon.png';
+import apple_music_icon from '../../assets/apple-music-icon.png';
 
 export default function Footer() {
   return (

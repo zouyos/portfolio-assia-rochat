@@ -1,9 +1,9 @@
 import style from './style.module.css';
-import avatar from '@/assets/avatar.png';
-import sketch1 from '@/assets/sketch1.png';
-import sketch2 from '@/assets/sketch2.png';
-import sketch3 from '@/assets/sketch3.png';
-import sketch4 from '@/assets/sketch4.png';
+import avatar from '../../assets/avatar.png';
+import sketch1 from '../../assets/sketch1.png';
+import sketch2 from '../../assets/sketch2.png';
+import sketch3 from '../../assets/sketch3.png';
+import sketch4 from '../../assets/sketch4.png';
 
 function Home() {
   return (

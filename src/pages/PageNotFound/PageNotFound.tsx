@@ -1,4 +1,4 @@
-import ronflex from '@/assets/ronflex.png';
+import ronflex from '../../assets/ronflex.png';
 import style from './style.module.css';
 
 export default function PageNotFound() {
