@@ -8,14 +8,14 @@ export default function Footer() {
     <div className={style.container}>
       <div className='d-flex justify-content-center align-items-center mt-3'>
         <a
-          href='https://www.linkedin.com/in/assia-rochat-a1978923a/'
+          href='https://www.instagram.com/ekassiaaa/'
           target='__blank'
           className={style.link}
         >
           <img src={instagram_icon} className={style.icon} />
         </a>
         <a
-          href='https://www.instagram.com/ekassiaaa/'
+          href='https://www.linkedin.com/in/assia-rochat-a1978923a/'
           target='__blank'
           className={style.link}
         >
