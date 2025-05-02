@@ -48,7 +48,7 @@ function Home() {
                 TV Paint.
               </p>
               <p>
-                I draw my inspiration from authors such as Tommy Ungerer and
+                I draw my inspiration from authors such as Tomi Ungerer and
                 Manuele Fior.
               </p>
               <p>Have fun checking my work!</p>
