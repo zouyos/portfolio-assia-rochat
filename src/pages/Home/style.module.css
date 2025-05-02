@@ -25,7 +25,7 @@
 }
 
 .presentationText {
-  text-align: center;
+  text-align: end;
   font-size: 1.3rem;
   max-width: 900px;
   padding: 0 1rem;
@@ -36,6 +36,23 @@
   width: auto;
   object-fit: contain;
   border-radius: 10px;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+}
+
+.roundedIcon {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.largeIcon {
+  width: auto;
+  height: 35px;
+  border-radius: 5px;
 }
 
 @media (max-width: 1024px) {

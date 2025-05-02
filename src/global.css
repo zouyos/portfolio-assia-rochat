@@ -11,12 +11,19 @@ body {
 }
 
 h1 {
-  font-family: 'Dancing Script', sans-serif;
-  font-size: 4rem;
+  font-family: 'Hecho A Mano', sans-serif;
+  font-size: 5.5rem;
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
+}
+
+@font-face {
+  font-family: 'Hecho A Mano';
+  src: url('./assets/HechoAMano-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

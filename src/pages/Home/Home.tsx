@@ -4,6 +4,9 @@ import sketch1 from '../../assets/sketch1.png';
 import sketch2 from '../../assets/sketch2.png';
 import sketch3 from '../../assets/sketch3.png';
 import sketch4 from '../../assets/sketch4.png';
+import photoshop_icon from '../../assets/photoshop-icon.png';
+import storyboard_pro_icon from '../../assets/storyboard-pro-icon.png';
+import tv_paint_icon from '../../assets/tv-paint-icon.png';
 
 function Home() {
   return (
@@ -16,25 +19,39 @@ function Home() {
             <h2 className='my-4'>Hi There!</h2>
             <div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Similique, fuga totam. Corporis atque obcaecati incidunt
-                commodi. Ipsa harum repudiandae debitis repellat nemo,
-                asperiores magni quis id odio, aliquid quia aspernatur!
+                My name is Assia Rochat, I'm 21 years old and I specialize in
+                storyboarding.
               </p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A,
-                officia!
+                I've had a passion for drawing since childhood, and have a
+                bachelor's degree in animation design.
               </p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Consequuntur expedita cum nobis quae quas nihil.
+                The software I use most often is{' '}
+                <img
+                  src={photoshop_icon}
+                  alt='Photoshop Icon'
+                  className={style.icon}
+                />{' '}
+                Photoshop,{' '}
+                <img
+                  src={storyboard_pro_icon}
+                  alt='Photoshop Icon'
+                  className={style.roundedIcon}
+                />{' '}
+                Storyboard Pro and{' '}
+                <img
+                  src={tv_paint_icon}
+                  alt='Photoshop Icon'
+                  className={style.largeIcon}
+                />{' '}
+                TV Paint.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Similique, fuga totam. Corporis atque obcaecati incidunt
-                commodi. Ipsa harum repudiandae debitis repellat nemo,
-                asperiores magni quis id odio, aliquid quia aspernatur!
+                I draw my inspiration from authors such as Tommy Ungerer and
+                Manuele Fior.
               </p>
+              <p>Have fun checking my work!</p>
             </div>
           </div>
         </div>
