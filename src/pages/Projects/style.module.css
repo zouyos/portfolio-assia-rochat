@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: 400;
+  margin: 1.5rem 6rem;
+  font-size: 1.3rem;
+}
+
+.video {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9; /* This keeps the video responsive */
+  margin: 0 auto;
+}
+
+.player {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 1.5rem 1.5rem;
+  }
+}

@@ -13,7 +13,7 @@
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .mail {
     gap: 0.5rem;
   }
