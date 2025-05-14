@@ -22,7 +22,7 @@ export default function Contact() {
           'service_o4f6eis',
           'template_6ktl72r',
           formRef.current,
-          'ngviA9KDuTzf4dmui'
+          'qb0i77WJIEqFakTBi'
         )
         .then(() => {
           setSubmitted(true);
