@@ -4,6 +4,7 @@ import sketch1 from '../../assets/sketch1.png';
 import sketch2 from '../../assets/sketch2.png';
 import sketch3 from '../../assets/sketch3.png';
 import sketch4 from '../../assets/sketch4.png';
+import { THEME, useThemeModeContext } from '../../contexts/ThemeModeContext';
 
 type Media = {
   type: 'image' | 'video';
@@ -29,6 +30,7 @@ export default function Storyboards() {
   const [isClosing, setIsClosing] = useState(false);
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [isEntering, setIsEntering] = useState(false);
+  const { themeMode } = useThemeModeContext();
 
   const open = (index: number) => {
     setCurrentIndex(index);
@@ -94,6 +96,10 @@ export default function Storyboards() {
               ? style.lightboxEnter
               : style.lightboxEnterActive,
           ].join(' ')}
+          style={{
+            backgroundColor: THEME[themeMode].backgroundColor,
+            opacity: '90%',
+          }}
         >
           <button
             onClick={() => {
@@ -103,7 +109,7 @@ export default function Storyboards() {
                 setIsClosing(false);
               }, 200);
             }}
-            className='btn-close position-absolute top-0 end-0 m-3 btn-close-white'
+            className={`btn-close position-absolute top-0 end-0 m-3 btn-close-${THEME[themeMode].btnClose}`}
           ></button>
 
           <button

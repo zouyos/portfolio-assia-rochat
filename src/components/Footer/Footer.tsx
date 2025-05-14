@@ -2,10 +2,16 @@ import style from './style.module.css';
 import instagram_icon from '../../assets/instagram-icon.png';
 import linkedin_icon from '../../assets/linkedin-icon.png';
 import apple_music_icon from '../../assets/apple-music-icon.png';
+import { THEME, useThemeModeContext } from '../../contexts/ThemeModeContext';
 
 export default function Footer() {
+  const { themeMode } = useThemeModeContext();
+
   return (
-    <div className={style.container}>
+    <div
+      className={style.container}
+      style={{ borderTop: `1px solid ${THEME[themeMode].color}` }}
+    >
       <div className='d-flex justify-content-center align-items-center mt-3'>
         <a
           href='https://www.instagram.com/ekassiaaa/'

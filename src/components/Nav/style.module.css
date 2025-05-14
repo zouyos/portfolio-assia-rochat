@@ -2,10 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
-  color: white;
   padding: 10px 50px;
-  border-bottom: 1px solid white;
   position: relative;
 }
 
@@ -28,7 +25,6 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: white;
   border-radius: 2px;
 }
 
@@ -42,14 +38,6 @@
   border-radius: 10px;
   cursor: pointer;
 }
-.menuItem:hover {
-  color: black;
-  background-color: white;
-}
-.selected {
-  color: black;
-  background-color: white;
-}
 
 @media (max-width: 800px) {
   .burger {
@@ -61,12 +49,10 @@
     top: 100%;
     right: 0;
     flex-direction: column;
-    background-color: black;
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    border-top: 1px solid white;
     z-index: 1;
   }
 
