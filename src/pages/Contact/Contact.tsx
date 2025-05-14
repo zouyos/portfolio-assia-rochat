@@ -19,10 +19,10 @@ export default function Contact() {
     if (formRef.current) {
       emailjs
         .sendForm(
-          'YOUR_SERVICE_ID',
-          'YOUR_TEMPLATE_ID',
+          'service_o4f6eis',
+          'template_6ktl72r',
           formRef.current,
-          'YOUR_PUBLIC_KEY'
+          'ngviA9KDuTzf4dmui'
         )
         .then(() => {
           setSubmitted(true);
