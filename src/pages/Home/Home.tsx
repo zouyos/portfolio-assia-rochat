@@ -7,8 +7,11 @@ import sketch4 from '../../assets/sketch4.png';
 import photoshop_icon from '../../assets/photoshop-icon.png';
 import storyboard_pro_icon from '../../assets/storyboard-pro-icon.png';
 import tv_paint_icon from '../../assets/tv-paint-icon.png';
+import { useThemeModeContext } from '../../contexts/ThemeModeContext';
 
 function Home() {
+  const { themeMode } = useThemeModeContext();
+
   return (
     <>
       <div className={`${style.container}`}>
@@ -108,6 +111,9 @@ function Home() {
             <span
               className='carousel-control-prev-icon'
               aria-hidden='true'
+              style={{
+                filter: `invert(${themeMode === 'dark' ? 0 : 1})`,
+              }}
             ></span>
             <span className='visually-hidden'>Previous</span>
           </button>
@@ -120,6 +126,9 @@ function Home() {
             <span
               className='carousel-control-next-icon'
               aria-hidden='true'
+              style={{
+                filter: `invert(${themeMode === 'dark' ? 0 : 1})`,
+              }}
             ></span>
             <span className='visually-hidden'>Next</span>
           </button>

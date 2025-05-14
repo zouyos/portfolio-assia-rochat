@@ -116,8 +116,8 @@ export default function Nav({ themeModeSwitch }: NavProps) {
             {item.label}
           </div>
         ))}
-        {themeModeSwitch}
       </div>
+      {themeModeSwitch}
     </nav>
   );
 }
