@@ -13,6 +13,7 @@ export default function Nav({ themeModeSwitch }: NavProps) {
   const [selected, setSelected] = useState<string | undefined>(undefined);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const burgerRef = useRef<HTMLDivElement | null>(null);
   const { themeMode } = useThemeModeContext();
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
@@ -35,7 +36,9 @@ export default function Nav({ themeModeSwitch }: NavProps) {
       if (
         menuOpen &&
         menuRef.current &&
-        !menuRef.current.contains(event.target as Node)
+        !menuRef.current.contains(event.target as Node) &&
+        burgerRef.current &&
+        !burgerRef.current.contains(event.target as Node)
       ) {
         setMenuOpen(false);
       }
@@ -63,7 +66,11 @@ export default function Nav({ themeModeSwitch }: NavProps) {
         <img src={logo} alt='Logo' className={style.logo} />
       </div>
 
-      <div className={style.burger} onClick={() => setMenuOpen(!menuOpen)}>
+      <div
+        className={style.burger}
+        onClick={() => setMenuOpen(!menuOpen)}
+        ref={burgerRef}
+      >
         <div
           className={style.bar}
           style={{ backgroundColor: THEME[themeMode].color }}

@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 import { THEME, useThemeModeContext } from './contexts/ThemeModeContext';
+import { MoonFill, SunFill } from 'react-bootstrap-icons';
 
 function App() {
   const { themeMode, setThemeMode } = useThemeModeContext();
@@ -12,6 +13,7 @@ function App() {
 
   const themeModeSwitch = (
     <div className='d-flex justify-content-center align-items-center'>
+      <SunFill className='me-2' />
       <div className='form-check form-switch'>
         <input
           className='form-check-input'
@@ -21,10 +23,8 @@ function App() {
           value={themeMode}
           onChange={toggleThemeMode}
         />
-        <label className='form-check-label'>
-          {themeMode === 'dark' ? 'Dark Theme' : 'Light Theme'}
-        </label>
       </div>
+      <MoonFill className='ms-1' />
     </div>
   );
 
