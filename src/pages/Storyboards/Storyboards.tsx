@@ -1,10 +1,18 @@
 import style from './style.module.css';
 import { useState, useEffect } from 'react';
-import sketch1 from '../../assets/sketch1.png';
-import sketch2 from '../../assets/sketch2.png';
-import sketch3 from '../../assets/sketch3.png';
-import sketch4 from '../../assets/sketch4.png';
+import tvdialog from '../../assets/tvdialogue.mov';
+import aventure_minut from '../../assets/aventure_minut.mov';
+import sb1 from '../../assets/sb1.png';
+import sb2 from '../../assets/sb2.png';
+import sb3 from '../../assets/sb3.png';
+import sb4 from '../../assets/sb4.png';
+import sb5 from '../../assets/sb5.png';
+import sb6 from '../../assets/sb6.png';
+import sb7 from '../../assets/sb7.png';
+import sb8 from '../../assets/sb8.png';
+import sb9 from '../../assets/sb9.png';
 import { THEME, useThemeModeContext } from '../../contexts/ThemeModeContext';
+import { PlayFill } from 'react-bootstrap-icons';
 
 type Media = {
   type: 'image' | 'video';
@@ -12,18 +20,17 @@ type Media = {
 };
 
 const mediaList: Media[] = [
-  { type: 'image', src: sketch1 },
-  { type: 'image', src: sketch2 },
-  { type: 'image', src: sketch3 },
-  { type: 'image', src: sketch4 },
-  { type: 'image', src: sketch1 },
-  { type: 'image', src: sketch2 },
-  { type: 'image', src: sketch3 },
-  { type: 'image', src: sketch4 },
-  { type: 'image', src: sketch1 },
-  { type: 'image', src: sketch2 },
-  { type: 'image', src: sketch3 },
-  { type: 'image', src: sketch4 },
+  { type: 'video', src: tvdialog },
+  { type: 'video', src: aventure_minut },
+  { type: 'image', src: sb1 },
+  { type: 'image', src: sb2 },
+  { type: 'image', src: sb3 },
+  { type: 'image', src: sb4 },
+  { type: 'image', src: sb5 },
+  { type: 'image', src: sb6 },
+  { type: 'image', src: sb7 },
+  { type: 'image', src: sb8 },
+  { type: 'image', src: sb9 },
 ];
 
 export default function Storyboards() {
@@ -62,7 +69,7 @@ export default function Storyboards() {
           {mediaList.map((media, index) => (
             <div className='col-6 col-sm-4 col-md-3' key={index}>
               <div
-                className='ratio ratio-1x1 overflow-hidden rounded'
+                className='ratio ratio-1x1 overflow-hidden rounded position-relative'
                 onClick={() => open(index)}
                 style={{ cursor: 'pointer' }}
               >
@@ -73,12 +80,20 @@ export default function Storyboards() {
                     alt=''
                   />
                 ) : (
-                  <video
-                    src={media.src}
-                    className='w-100 h-100 object-fit-cover'
-                    muted
-                    playsInline
-                  />
+                  <>
+                    <video
+                      src={media.src}
+                      className='w-100 h-100 object-fit-cover'
+                      playsInline
+                    />
+                    <div
+                      className={`${style.videoIconOverlay} d-flex justify-content-center align-items-center`}
+                    >
+                      <div className={style.videoIconCircle}>
+                        <PlayFill size={24} />
+                      </div>
+                    </div>
+                  </>
                 )}
               </div>
             </div>

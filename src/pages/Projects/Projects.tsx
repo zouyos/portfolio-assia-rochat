@@ -4,7 +4,7 @@ import style from './style.module.css';
 export default function Projects() {
   return (
     <div className={style.container}>
-      <h1 className='text-center'>Project Name</h1>
+      <h1 className='text-center'>Triste Cire</h1>
       <div className={style.presentation}>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni dolore
         quod, ex corporis, maiores eos sit velit veniam accusantium, atque quia
@@ -18,7 +18,7 @@ export default function Projects() {
       </div>
       <div className={style.video}>
         <ReactPlayer
-          url='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+          url='https://youtu.be/OtfeKddNKhY?si=03wFvHzbgP9aaMFa'
           className={style.player}
           width='100%'
           height='100%'
